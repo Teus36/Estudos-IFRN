@@ -1,0 +1,15 @@
+frase = input("Digite uma frase: ").lower()
+
+espacos = frase.count(" ")
+a = frase.count("a")
+e = frase.count("e")
+i = frase.count("i")
+o = frase.count("o")
+u = frase.count("u")
+
+print("Quantidade de espaços em branco:", espacos)
+print("Quantidade de vogais 'a':", a)
+print("Quantidade de vogais 'e':", e)
+print("Quantidade de vogais 'i':", i)
+print("Quantidade de vogais 'o':", o)
+print("Quantidade de vogais 'u':", u)
