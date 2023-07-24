@@ -17,7 +17,7 @@ def main():
     qt_senhas = int(input("Quantas senhas você quer gerar: "))
 
     arquivo = open('senhas.txt', 'w')
-    for _ in range(qt_senhas):
+    for i in range(qt_senhas):
         senha = gerar_senha(tamanho_senha)
         arquivo.write(senha + "\n")
 

@@ -1,0 +1,22 @@
+#título {
+    text-align: right;
+    text-decoration: underline;
+    font-size: 40px;
+
+}
+
+#subtítulo {
+    text-align: right;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.paragrafo {
+    text-align: justify;
+    margin-left: 80%;
+
+}
+
+#texto_destacado {
+    font-size: 39px;
+}
