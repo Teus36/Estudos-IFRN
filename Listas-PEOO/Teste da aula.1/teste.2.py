@@ -3,7 +3,7 @@ from tkinter import *
 class app:
     def __init__(self):
         self.janela = Tk()
-        self.janela.title("Janela legal")
+        self.janela.title("Teste.2")
         self.janela.geometry("1200x800")
 
 
