@@ -19,9 +19,8 @@ header {
 }
 
 .botões_c {
-    display: inline-block;
+    display: inline;
     padding-left: 780px;
-    padding-bottom: 00px;
 
 }
 .bt_cabeçalho {
@@ -35,7 +34,7 @@ header {
     
 }
 
-.aside_section {
+.aside {
     display: flex;
 }
 
@@ -44,11 +43,12 @@ aside {
     height: 480px;
     width: 20%;
 }
+
 .botões_a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 
