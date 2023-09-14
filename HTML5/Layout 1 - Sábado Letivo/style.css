@@ -1,0 +1,76 @@
+* {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: rgb(243, 143, 21);
+    padding: 15px;
+}
+header {
+    background-color: rgb(100, 0, 0);
+    height: 80px;
+}
+
+.i_block {
+    display: inline-block;
+    padding: 12px;
+}
+
+.botões_c {
+    display: inline-block;
+    padding-left: 780px;
+    padding-bottom: 00px;
+
+}
+.bt_cabeçalho {
+    color: rgb(243, 143, 21);
+    background-color: rgb(100, 0, 0);
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.aside_section {
+    display: flex;
+}
+
+aside {
+    background-color: brown;
+    height: 480px;
+    width: 20%;
+}
+.botões_a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+
+.bt_painel_lateral {
+    padding: 10px 20px; 
+    margin: 5px; 
+    background-color: rgb(100, 0, 0);
+    color: rgb(243, 143, 21);
+    border-radius: 5px; 
+    cursor: pointer; 
+    width: 150px;
+}
+
+section {
+    background-color: rgb(138, 23, 23);
+    width: 80%;
+    
+}
+
+footer {
+    background-color: rgb(100, 0, 0);
+    height: 69px
+}
+
+
