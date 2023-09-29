@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 200px;
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+.item {
+    border: 1px solid black;
+}
+    </style>
+    
+    <title>Teste de Flexbox</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita, eos reiciendis nulla repellendus omnis blanditiis laboriosam? Odio iusto laborum, illo nam sit quae, ratione, modi perferendis repudiandae voluptatum harum.</div>
+        <div class="item">Testo 2</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ea alias similique assumenda voluptatum asperiores porro, eum vero quod ratione suscipit odio repellendus pariatur? Ipsam tempore unde voluptate aspernatur neque.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ea alias similique assumenda voluptatum asperiores porro, eum vero quod ratione suscipit odio repellendus pariatur? Ipsam tempore unde voluptate aspernatur neque.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ea alias similique assumenda voluptatum asperiores porro, eum vero quod ratione suscipit odio repellendus pariatur? Ipsam tempore unde voluptate aspernatur neque.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ea alias similique assumenda voluptatum asperiores porro, eum vero quod ratione suscipit odio repellendus pariatur? Ipsam tempore unde voluptate aspernatur neque.</div>
+    </div>
+    
+    <div class="container" style="width: 300px">
+        <div class="container" style="width: 300px; flex-shrink: 4;">
+            texto muito pórrtojuêís
+        </div>
+        <div class="container" style="width: 300px; flex-shrink: 1;">
+            texto muito pórrtojuêís
+        </div>
+    </div> 
+
+
+</body>
+</html>
