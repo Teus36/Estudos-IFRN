@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+}
+
+.menuLateral img {
+    width: 16px; 
+    height: 10px;
+    margin-left: 30px;
+}
+
+.linkEntrar {
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroImg {
+    width: 52%;
+    height: auto;
+}
+
+.caixaTextoHero {
+    padding-top: 15px;
+    width: 350px;
+    height: 50px;
+}
+
+.textos {
+    padding-left: 80px;
+}
+
+#maratona4meses {
+    color: white;
+    font-size: 16px;
+}
+
+#planoAnual {
+    color: #00FE66;
+}
+
+#botaoConteudo1 {
+    background-color: #E6161B;
+    color: white;
+}
+
+#botaoConteudo2 {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.botoesConteudo {
+    border-radius: 10px;
+    border: 0px;
+    height: 46px;
+    margin: 15px 0px 0px 0px;
+    display: block;
+    width: 370px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.valorReal {
+    text-decoration: line-through;
+    color: white;
+}
