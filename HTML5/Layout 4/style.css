@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    color: white;
 }
 
 .header {
@@ -24,7 +25,6 @@ body {
 }
 
 .linkEntrar {
-    margin-right: 30px;
     color: white;
     text-decoration: none;
 }
@@ -41,7 +41,6 @@ body {
 }
 
 .caixaTextoHero {
-    padding-top: 15px;
     width: 350px;
     height: 50px;
 }
@@ -52,11 +51,13 @@ body {
 
 #maratona4meses {
     color: white;
-    font-size: 16px;
+    font-size: 15.5px;
+    font-family: "Open Sans";
 }
 
 #planoAnual {
     color: #00FE66;
+    font-family: "Open Sans";
 }
 
 #botaoConteudo1 {
@@ -65,6 +66,7 @@ body {
 }
 
 #botaoConteudo2 {
+    margin-top: 15px;
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -74,14 +76,47 @@ body {
     border-radius: 10px;
     border: 0px;
     height: 46px;
-    margin: 15px 0px 0px 0px;
     display: block;
     width: 370px;
     font-size: 16px;
     font-weight: bold;
 }
 
-.valorReal {
+.botoesConteudo:hover {
+    cursor: pointer;
+}
+
+#valorAntigo {
     text-decoration: line-through;
-    color: white;
+    color: #B6B4B7;
+    font-size: 14px;
+}
+
+#valorReal {
+    padding: 10px 0px 10px 0px;
+}
+
+#valorTotal {
+    font-size: 14px;
+    color: #B6B4B7;
+}
+
+.valores {
+    font-size: 13px;
+}
+
+.divValores {
+    padding-left: 45px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#t12x {
+    font-size: 20px;
+}
+
+#t1490 {
+    font-size: 32px;
+    font-weight: bold;
 }
