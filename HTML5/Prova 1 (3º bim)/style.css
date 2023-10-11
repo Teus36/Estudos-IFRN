@@ -91,14 +91,17 @@ body {
 }
 
 .bt-rdp {
+    margin-top: 20px;
     background-color: #BA94DF;
     color: white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
     border-bottom: none;
     border-top: none;
     width: 60px;
     height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #contact {
@@ -106,6 +109,10 @@ body {
     border-right: none;
 }
 
-#test {
-    border-right: none;
+#get_start {
+    color: #BA94DF;
+    background-color: white;
+    border-radius: 20px;
+    width: 90px;
+    margin-left: 5px;
 }
