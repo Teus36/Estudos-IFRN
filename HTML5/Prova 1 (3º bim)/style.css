@@ -104,6 +104,10 @@ body {
     margin-right: 5px;
 }
 
+.bt-rdp:hover {
+    cursor: pointer;
+}
+
 #contact {
     border-left: none;
     border-right: none;
