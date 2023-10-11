@@ -51,6 +51,10 @@ body {
 
 }
 
+.bt:hover {
+    cursor: pointer;
+}
+
 #bt-2-1 {
     width: 50px;
 }
