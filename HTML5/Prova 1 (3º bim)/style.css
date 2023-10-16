@@ -1,100 +1,126 @@
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}  
+
+body {
+
+    background-color: #BA94DF;
 }
 
-.container{
-    width: 90%;
-    margin-left: 5%;
+.content {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.conteudo{
-    width: 70%;
-}
-
-.armazena{
+.container {
+    width: 100%;
     display: flex;
+
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
     
 }
-.caixas{
-    padding: 5px;
-    margin: 8px;
-    height: 400px;
-    background-color: blanchedalmond;
-}
 
-.caixa{
-    height: 50%;
+.botões {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkmagenta;
-    margin: 8px;
-    display: flex;
     flex-direction: column;
-    border-radius: 5px;
-}
-aside{
-    align-items: stretch;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
+    width: 100px;
+
 }
 
-button{
-    font-weight: bolder;
-    width: 50%;
+.bt {
+    border: 4px solid black;
+    width: 70px;
+    height: 90px;
+    border-radius: 40px;
+    background-color: #BA94DF;
+    margin-bottom: 15px;
+
+}
+
+.bt:hover {
+    cursor: pointer;
+}
+
+#bt-2-1 {
+    width: 50px;
+}
+
+#bt-2-2 {
+    width: 85px;
+    background-color: #FBEBD7;
+}
+
+#imagem-bt2 {
+    width: 40px;
     height: 50px;
-    border-radius: 20px;
-    background-color: goldenrod;
-    color: darkmagenta;
-}
-button:hover{
-    background-color: blanchedalmond;
-    border: 0.5px solid darkmagenta;
 }
 
-input{
-    width: 60%;
-    margin: 20px 0;
+.legenda {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bt-legenda {
+    background-color: #BA94DF;
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 30px;
+    height: 35px;
+}
+
+#estrela {
+    width: 15px;
+    height: 15px;
+}
+
+.botões-rodapé {
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.bt-rdp {
+    margin-top: 20px;
+    background-color: #BA94DF;
+    color: white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: none;
+    border-top: none;
+    width: 60px;
     height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-input:focus{
-    outline: none;
-    border: 0.5px solid darkmagenta;
+
+.bt-rdp:hover {
+    cursor: pointer;
 }
-@media only screen and (max-width: 900px) {
-    .armazena{
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        
-        
-    }
-    .conteudo{
-        width: 100%;
-    }
 
-    .caixas{
-        width: 100%;
-        
-    }
-    .caixa{
-        width: 100%;
-        height: 500px;
-    }
-    aside{
-        width: 100%;
-    }
-    .container{
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-    
+#contact {
+    border-left: none;
+    border-right: none;
+}
 
-  }
+#get_start {
+    color: #BA94DF;
+    background-color: white;
+    border-radius: 20px;
+    width: 90px;
+    margin-left: 5px;
+}
