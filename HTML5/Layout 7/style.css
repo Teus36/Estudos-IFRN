@@ -1,0 +1,48 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.cabeçalho {
+    display: flex;
+    width: 100%;
+    background-color: #F23B2F;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+}
+
+.painel_lateral {
+    background-color: #F5F5FA;
+    width: 26.9%;
+    height: 937px;
+}
+
+.texto_cabeçalho{
+    color: white;
+    font-family: 'Scandia Web';
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'Scandia Web';
+    src: url(Scandia-Regular.woff2);
+}
+
+.img_cabeçalho {
+    margin-right: 5px;
+}
+.logotipo {
+    position: relative;
+    left: 248px;
+    top: 30px;
+}
+
+#logotipo_text {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
