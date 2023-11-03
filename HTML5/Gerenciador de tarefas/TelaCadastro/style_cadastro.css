@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    color: #6368d9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F2FF;
+    height: 100%;
+}
+
+.squareCompleto {
+    display: flex;
+    box-shadow: 1px 1px 10px #6368D9;
+    border-radius: 20px;
+}
+
+.imagemLogin {
+    width: 500px;
+    height: 500px;
+    background-image: url(./Imagens/imagem_login.png);
+    background-repeat: no-repeat, no-repeat;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.container .squareLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;
+}
+
+.container .inputs input {
+    height: 45px;
+    width: 300px;
+    padding: 15px;
+    background-color: #D1D0F9;
+    border-radius: 25px;
+    border: 0px;
+    outline: none;
+}
+
+.container .inputs input::placeholder {
+    color: #6368D9;
+}
+
+
+.squareLogin .buttonLogin {
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #6368D9;
+    color: white;
+    box-shadow: 1px 1px 6px #6368D9;
+    cursor: pointer;
+}
+
+.linha {
+    width: 81.925px;
+    height: 1px;
+    background-color: #D8D8D8;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider h1 {
+    font-size: 14px;
+    color: #666666;
+    font-weight: normal;
+}
+
+.divider div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaoRedesSociais {
+    width: 148.5px;
+    height: 40px;
+    box-shadow: inset 0 -2px rgba(0,0,0,.25);
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    width: 301px;
+    justify-content: space-between;
+}
+
+/* 
+@media screen and (max-width:1080px) {
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        background-color: #f6f2ff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        height: 20%;
+        width: 60%;
+    }
+
+    input {
+        background-color: #d1d0f9;
+        height: 30%;
+        border-radius:  75px;
+        font-size: 35px;
+        border: none;
+    }
+
+    input::placeholder {
+        padding-left: 10%;
+        padding-top: 2%;
+        font-size: 40px;
+        color: #7174dd;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+} */
