@@ -18,8 +18,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -47,7 +47,7 @@ a {
     text-decoration: none;
 }
 input {
-    width: 250px;
+    width: 330px;
     height: 35px;
     padding-top: 2px;
     border-bottom: 1px solid #D8D8D8;
@@ -56,7 +56,7 @@ input {
 
 #esqueceu_senha {
     margin-top: 3px;
-    margin-left: 125px;
+    margin-left: 205px;
     text-decoration: none;
     color: #999999;
     font-size: 12px;
@@ -77,7 +77,7 @@ input {
 .opção {
     display: flex;
     background-color: rgb(240, 240, 240);
-    width: 250px;
+    width: 330px;
     height: 30px;
     flex-direction: row;
     justify-content: center;
