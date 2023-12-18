@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Atividade - Parte 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa_login">
+            <img src="login_icon.png" id="login_icon_img">
+            <h1 id="título">Login</h1>
+            <div class="inputs">
+                <input type="text" placeholder="Matricula">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Senha">
+            </div>
+            <a id="esqueceu_senha" href="">Esqueceu sua senha?</a>
+            <div class="outras_opções">
+                <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=openid%20profile%20email&prompt=consent&response_type=code&state=10c980ed-e9a9-455e-9c89-ae040a0a73ac&redirect_uri=https%3A%2F%2Fauthx.globoid.globo.com%2Fcallback%2Flogin%2Fgoogle&client_id=661523407538-jh6q0032nglejsmpckltu79e8o11i9a2.apps.googleusercontent.com&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow">
+                    <button class="opção" id="entrar_google">
+                        <img id="logo_google" src="logo_google.svg" alt="Google">
+                        <p id="texto_google">Continuar com Google</p>
+                    </button>
+                </a>
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=289255557788943&kid_directed_site=0&app_id=289255557788943&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv17.0%2Fdialog%2Foauth%3Fclient_id%3D289255557788943%26redirect_uri%3Dhttps%253A%252F%252Fauthx.globoid.globo.com%252Fcallback%252Flogin%252Ffacebook%26state%3D3e1f901d-501e-4493-8f3c-ee5418b285ed%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D873cf836-98a3-4d9d-a072-adb87c5419f6%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fauthx.globoid.globo.com%2Fcallback%2Flogin%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D3e1f901d-501e-4493-8f3c-ee5418b285ed%23_%3D_&display=page&locale=pt_PT&pl_dbl=0">
+                    <button class="opção" id="entrar_facebook">
+                        <img id="logo_facebook" src="logo_facebook.svg" alt="Facebook">
+                        <p id="texto_facebook">Continuar com Facebook</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

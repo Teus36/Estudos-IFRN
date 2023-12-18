@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: aquamarine;
+}
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    background-color: aquamarine;
+
+}
+
+.buttonsSidebar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-around;
+}
+
+.buttonsSidebar button {
+    background-color: aquamarine;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.boxes {
+    width: 100%;
+    height: 100%;
+}
+
+.boxes_1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.boxes_2 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box_1 {
+    width: 23%;
+    height: 70%;
+    background-color: aquamarine;
+}
+
+
+.box_2 {
+    width: 23%;
+    height: 70%;
+    background-color: aquamarine;
+}
+
+.bottombar {
+    display: none;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(181, 114, 245);
+}
+
+@media screen and (max-width: 820px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: flex-end;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        padding: 15px;
+    }
+
+    .boxes_1, .boxes_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    
+    }
+
+    .box_1, .box_2 {
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+}
