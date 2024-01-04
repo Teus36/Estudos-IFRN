@@ -1,0 +1,12 @@
+body {
+
+    height: 100vh;
+}
+
+#caixa {
+    margin-top: 15px;
+    padding: 5px;
+    height: 60px;
+    width: 20%;
+    background-color: aquamarine;
+}
