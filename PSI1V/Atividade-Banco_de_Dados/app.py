@@ -32,7 +32,7 @@ def login():
 
         # Verificar se o usuário existe no banco de dados
         conexao = get_connection()
-        cursor = conexao.execute("SELECT * FROM users WHERE nome = ? AND senha = ?", (nome, senha))
+        cursor = conexao.execute("SELECT * FROM users WHERE email = ? AND senha = ?", (nome, senha))
         user = cursor.fetchone()
         conexao.close()
 
@@ -55,8 +55,8 @@ def register():
         nome = request.form['nome']
         senha = request.form['senha']
 
-        conexao = get_connection
-        user = conexao.execute("SELECT * FROM users WHERE email= ?" (nome, )).fetchone()
+        conexao = get_connection()
+        user = conexao.execute("SELECT * FROM users WHERE email= ?", (nome, )).fetchone()
 
         # regsitrar no banco 
         if user:
