@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ee5b5b; /* Ajuste conforme necessário */
+    padding: 10px;
+}
+
+main {
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+}
+
+.botao {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+}
+
+#texto_index {
+    color: rgb(16, 16, 36);
+    text-decoration: none;
+}
+
+#texto_base {
+    color: rgb(16, 16, 36);
+    text-decoration: none;
+}
+
+.form_cadastro {
+    padding: 5px;
+}
