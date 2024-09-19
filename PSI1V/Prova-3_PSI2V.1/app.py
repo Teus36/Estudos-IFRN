@@ -30,6 +30,6 @@ def cadastro():
 
     return render_template('cadastro.html')
 
-import sqlite3
+
 
 
