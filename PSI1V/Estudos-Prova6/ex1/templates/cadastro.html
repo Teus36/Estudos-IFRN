@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registro de usuários</h1>
+    <form action="{{ url_for('cadastrarUser') }}" method="POST">
+        <label for="Nome">Nome:</label><br>
+        <input type="text" name="user" placeholder="Nome de usuário"><br>
+        <label for="Senha">Senha</label>:</label><br>
+        <input type="text" name="senha" placeholder="Senha"><br>
+        <button type="submit">Enviar</button>
+    </form>
+    {% if erro %}
+        <p style="color: red;">{{ erro }}</p>
+    {% endif %}
+</body>
+</html>

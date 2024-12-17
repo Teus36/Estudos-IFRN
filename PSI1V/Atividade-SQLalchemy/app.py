@@ -1,6 +1,7 @@
 from flask import Flask, render_template, url_for, request, redirect
 from sqlalchemy import *
 from sqlalchemy.orm import DeclarativeBase, sessionmaker, Session, Mapped, mapped_column
+from models import *
 
 app = Flask(__name__)
 
@@ -10,11 +11,6 @@ session = Session()
 
 class Base(DeclarativeBase):
     pass
-
-class User(Base):
-    __tablename__ = 'users'
-    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, nullable=False)
-    nome: Mapped[str] = mapped_column(nullable=False)
 
 @app.route('/', methods=["GET", "POST"])
 def index():
