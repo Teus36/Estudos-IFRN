@@ -1,8 +1,8 @@
 
-def tabuada():
-    n1 = int(input("Digite um número para exibir sua tabuada: "))
-    for i in range(1, 11):
-        print(f'{n1} * {i} = {}')
+def tabuada(n1):
+    for i in range(11):
+        multi = n1 * i 
+        print(f'{n1} * {i} = {multi}')
 
-
-tabuada()
+n = int(input("Digite um número: "))
+tabuada(n)
