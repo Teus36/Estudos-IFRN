@@ -33,9 +33,9 @@ class User:
 
     def exibir_informações(self, nome, email, senha):
         if nome and email and senha:
-            self.get_nome(nome)
-            self.get_email(email)
-            self.get_senha(senha)
+            self.get_nome()
+            self.get_email()
+            self.get_senha()
 
     def apresentacao_informacoes(self, nome, email, senha):
         pass
