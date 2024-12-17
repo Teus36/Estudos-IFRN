@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Página de edição do usuário</h2>
+    <form action="{{ url_for('editUser', id=user.id) }}" method="POST">
+        <label for="Nome">Nome:</label><br>
+        <input type="text" name="user" placeholder="Novo usuário"><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

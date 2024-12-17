@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Página de cadastro</h1>
+    <form action="{{ url_for('index')}}" method="POST">
+        <label for="nome"></label>
+        <input type="text" name="nome" placeholder="Usuário" required>
+        <input type="Submit" value="Enviar">
+    </form>
+    {% if users %}
+        {% for user in users %}
+                <p>{{ user.nome }} </br>
+                <a href="{{url_for('edit', id=user.id)}}">Editar</a></p>
+                <a href="{{url_for('remove', id=user.id)}}">Remover</a></p>
+        {% endfor %}
+    {% else %}
+        <p>Não há nenhum usuário cadastrado</p>
+    {% endif %}
+
+</body>
+</html>
