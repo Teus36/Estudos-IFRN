@@ -18,7 +18,7 @@ class User(Base):
         self.nome = nome
         self.senha = generate_password_hash(senha)
 
-Base.metadata.create_all(engine)
+Base.metadata.create_all(engine)   
 
 
 
