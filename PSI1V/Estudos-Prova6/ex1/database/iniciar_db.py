@@ -1,13 +1,14 @@
 from sqlalchemy import create_engine, String
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, Session, session
 from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import UserMixin
 
 engine = create_engine('sqlite:///database/database.db')
 
 class Base(DeclarativeBase):
     pass
 
-class User(Base):
+class User(Base, UserMixin):
     __tablename__ = 'users'
 
     id:Mapped[int] = mapped_column(primary_key=True)

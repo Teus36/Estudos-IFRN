@@ -1,8 +1,19 @@
 from flask import Flask, render_template, request, redirect, url_for
+from flask_login import LoginManager, login_required, login_user
 from database.iniciar_db import * 
 
 app = Flask(__name__) 
+app.secret_key = 'chavesecretasupersecreta'
+
 session = Session(bind=engine)
+
+login_manager = LoginManager(app)
+login_manager.init_app(app)
+login_manager.login_view = 'logarUser'
+
+@login_manager.user_loader
+def load_user(user_id):
+    return session.query(User).filter_by(id=user_id).first()
 
 @app.route('/', methods=['GET', 'POST'])
 def cadastrarUser():    
@@ -30,6 +41,7 @@ def logarUser():
         user = session.query(User).filter_by(nome=nome).first()
 
         if nome and check_password_hash(user.senha, senha):
+            login_user(user)
             return redirect(url_for('exibirUsers'))
         
         if not nome or not senha:
@@ -39,6 +51,7 @@ def logarUser():
 
 
 @app.route('/users')
+@login_required
 def exibirUsers():
     users = session.query(User).all()
 
