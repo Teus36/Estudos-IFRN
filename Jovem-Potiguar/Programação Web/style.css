@@ -1,0 +1,39 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input {
+    padding: 11px;
+    border-radius: 5px;
+    border: 1px solid rgb(126, 126, 126);
+    margin: 5px;
+}
+
+.botao {
+    padding: 8px;
+    margin-top: 4px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(51, 160, 51);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 43px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
