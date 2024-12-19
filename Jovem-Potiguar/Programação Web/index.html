@@ -8,27 +8,28 @@
 </head>
 <body>
     <div class="main">
-        <table border="2px">
-            <tr>
-                <td>Nome</td>
-                <td>Raça</td>
-            </tr>
-            <tr>
-                <td>Raimundo Neto</td>
-                <td>xanin</td>
-            </tr>
-        </table>
-        <img src="gato.webp" alt="gato" width="330" height="300"> <br>
-        <a href="https://images.app.goo.gl/XWXoG8yr9jiaTU496">Clique aqui</a>
+            <table class="tabela">
+                <tr>
+                    <td><strong>Nome</strong></td>
+                    <td><strong>Raça</strong></td>
+                </tr>
+                <tr>
+                    <td>Raimundo Neto</td>
+                    <td>xanin</td>
+                </tr>
+            </table>
+        <img src="gato.png" alt="gato" width="330" height="300" id="gato"> <br>
+        <span class="link_gato"><a href="https://images.app.goo.gl/XWXoG8yr9jiaTU496" id="link_gato">Clique aqui</a></span>
         <div class="formulario">
-            <form action="" method="post">
-                <label for="nome">Nome:</label><br>
+            <form action="#" method="post">
+                <label for="nome" class="label">Nome:</label><br>
                 <input class="input" type="text" name="nome" id="nome" placeholder="Nome" required><br>
-                <label for="raca">Raça:</label><br>
+                <label for="raca" class="label">Raça:</label><br>
                 <input class="input" type="text" name="raca" id="raca" placeholder="Raça" required><br>
                 <button class="botao" type="submit">Enviar</button>
             </form>
         </div>
+        <textarea name="comentarios" id="comentario" placeholder="Fale sobre Raimundo Neto" cols="30" rows="6"></textarea>
     </div>
 </body>
 </html>
