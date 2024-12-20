@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(225, 252, 255);
+}
+
+.lista {
+    border: 3px solid blue;
+    width: 10%;
+    border-radius: 8px;
+    background-color: rgb(169, 203, 255);
+}
+
