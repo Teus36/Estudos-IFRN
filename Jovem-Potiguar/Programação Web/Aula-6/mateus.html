@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar com Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex h-screen bg-gray-100">
+    <!-- Sidebar -->
+    <div class="group flex flex-col bg-gray-800 text-white transition-all duration-300 ease-in-out w-16 hover:w-64">
+        <ul class="flex flex-col space-y-4 mt-6">
+            <li class="px-4 py-2 hover:bg-gray-700 rounded-md cursor-pointer">🏠 <span class="hidden group-hover:inline ml-2">Home</span></li>
+            <li class="px-4 py-2 hover:bg-gray-700 rounded-md cursor-pointer">ℹ️ <span class="hidden group-hover:inline ml-2">Sobre</span></li>
+            <li class="px-4 py-2 hover:bg-gray-700 rounded-md cursor-pointer">💼 <span class="hidden group-hover:inline ml-2">Serviços</span></li>
+            <li class="px-4 py-2 hover:bg-gray-700 rounded-md cursor-pointer">📞 <span class="hidden group-hover:inline ml-2">Contato</span></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="flex-1 p-6">
+        <h1 class="text-2xl font-bold">Bem-vindo!</h1>
+        <p class="mt-4">Esta é a área de conteúdo.</p>
+    </div>
+</body>
+</html>
