@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Consumindo API</title>
+    <style>
+        body {
+            background-color: rgb(26, 26, 26);
+        }
+        
+        .content {
+            background-color: white;
+            padding: 10px;
+            width: 30%;
+            height: 10%;
+            border-radius: 5px
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <label for="estados">Estados</label>
+        <select name="estado" id="estado" onchange="exibirCidades(this.value)"></select>
+        <select name="cidade" id="cidade"></select>
+    </div>
+
+</body>
+</html>
