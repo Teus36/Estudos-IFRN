@@ -68,3 +68,19 @@ def profile(id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+@app.route('/criar_post', methods=['GET', 'POST'])
+def create_post():
+    if request.method == 'POST':
+        title = request.form['title']
+        content = request.form['content']
+        user_id = 1  # Aqui você pode pegar o ID do usuário logado, por exemplo
+
+        # Criando o post no banco de dados
+        new_post = Post(title=title, content=content, user_id=user_id)
+        db.session.add(new_post)
+        db.session.commit()
+
+        return redirect(url_for('view_posts'))  # Redireciona para a página de posts
+
+    return render_template('post_form.html')
