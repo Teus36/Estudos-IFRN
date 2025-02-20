@@ -17,7 +17,6 @@ def load_user(user_id):
 
 @app.route('/', methods=['GET', 'POST'])
 def cadastrarUser():    
-    
     if request.method == 'POST':
         nome = request.form['user']
         senha = request.form['senha']
