@@ -1,16 +1,13 @@
 from abc import ABC, abstractmethod
 
 class Funcionario(ABC):
-    def __init__(self, nome):
-        self.nome = nome
-
     @abstractmethod
     def calcular_salario(self):
         pass
 
 class Gerente(Funcionario):
     def __init__(self, nome, salario_base):
-        super().__init__(nome)
+        self.nome = nome
         self.salario_base = salario_base
 
     def calcular_salario(self):
@@ -18,7 +15,7 @@ class Gerente(Funcionario):
 
 class Operador(Funcionario):
     def __init__(self, nome, horas, valor_hora):
-        super().__init__(nome)
+        self.nome = nome
         self.horas = horas
         self.valor_hora = valor_hora
 

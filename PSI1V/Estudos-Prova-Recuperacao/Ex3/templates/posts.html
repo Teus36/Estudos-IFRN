@@ -1,0 +1,23 @@
+<!-- posts.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts de Outros Usuários</title>
+</head>
+<body>
+    <h1>Posts de Outros Usuários</h1>
+
+    {% for post in posts %}
+    <div>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+        <small>Postado por: {{ post.user.username }}</small>
+        <hr>
+    </div>
+    {% else %}
+    <p>Não há posts para mostrar no momento.</p>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- post_form.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Post</title>
+</head>
+<body>
+    <h1>Criar um Novo Post</h1>
+    <form action="{{ url_for('create_post') }}" method="POST">
+        <label for="title">Título:</label>
+        <input type="text" name="title" id="title" required>
+        <br><br>
+
+        <label for="content">Conteúdo:</label>
+        <textarea name="content" id="content" rows="5" required></textarea>
+        <br><br>
+
+        <button type="submit">Postar</button>
+    </form>
+</body>
+</html>
