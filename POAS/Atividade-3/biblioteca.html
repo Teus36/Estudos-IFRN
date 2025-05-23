@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cadastrar Tarefa</title>
+</head>
+<body>
+    <button id="abrirModalCadastrarLivros"  class="abrirModais">Cadastrar livros</button>
+    <button id="abrirModalListarLivros" class="abrirModais">Listar livros</button>
+    <button id="abrirModalListarLivros" class="abrirModais">Listar livros pelo título</button>
+    <button id="abrirModalCadastrarUsuario" class="abrirModais">Cadastrar usuário</button>
+    <button id="abrirModalRealizarEmprestimo" class="abrirModais">Realizar empréstimo</button>
+    
+    <dialog id="modalCadastrarLivros">
+        <!-- Modal de cadastro de livros -->
+        <div class="cadastroLivros">
+            <input id="titulo" class="inputs" placeholder="Descrição" type="text">
+            <input id="autor" class="inputs" placeholder="Prioridade" type="text">
+            <input id="ano" class="inputs" placeholder="Descrição" type="text">
+        </div>
+        <div class="botoes">
+            <button id="enviar" type="submit">Enviar</button>
+            <button id="fecharModalCadastrarLivros" type="button">Fechar</button>
+        </div>
+    </dialog>
+    <dialog id="modalListarLivros">
+        <!-- Modal de listar livros -->
+        <h2>Lista de Livros</h2>
+        <ul id="listaLivros">
+            <li>Ex: Percy Jackson</li>
+        </ul>
+        <div class="botoes">
+            <button id="fecharModalListarLivros" type="button">Fechar</button>
+        </div>
+    </dialog>
+    <dialog id="modal">
+        <!-- Modal de listar livros pelo título -->
+        <div class="listarLivrosTitulo">
+            <input id="listarLivrosTitulo" class="inputs" placeholder="Descrição" type="text">
+    </dialog>
+    
+    
+
+<script>
+const modalCadastrarLivros = document.getElementById('modalCadastrarLivros');
+const abrirModalCadastrarLivros = document.getElementById('abrirModalCadastrarLivros');
+const fecharModalCadastrarLivros = document.getElementById('fecharModalCadastrarLivros');
+const concluida = document.getElementById('concluida');
+const naoConcluida = document.getElementById('naoConcluida');
+
+abrirModalCadastrarLivros.addEventListener('click', () => {
+  modalCadastrarLivros.showModal();
+});
+
+fecharModalCadastrarLivros.addEventListener('click', () => {
+  modalCadastrarLivros.close();
+});
+
+concluida.addEventListener('change', () => {
+  if (concluida.checked) {
+    naoConcluida.checked = false;
+  }
+});
+
+naoConcluida.addEventListener('change', () => {
+  if (naoConcluida.checked) {
+    concluida.checked = false;
+  }
+});
+
+const modalListarLivros = document.getElementById('modalListarLivros');
+const abrirModalListarLivros = document.getElementById('abrirModalListarLivros');
+const fecharModalListarLivros = document.getElementById('fecharModalListarLivros');
+
+abrirModalListarLivros.addEventListener("click", () => {
+    modalListarLivros.showModal();
+});
+
+fecharModalListarLivros.addEventListener("click", () => {
+    modalListarLivros.close();
+});
+
+</script>
+</body>
+</html>

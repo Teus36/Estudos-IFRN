@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cadastrar Tarefa</title>
+</head>
+<body>
+    <button id="abrirModal">Cadastrar Tarefa</button>
+    <button id="abrirModalListar">Listar Tarefas</button>
+    
+    <dialog id="modal">
+        <!-- Modal de Cadastro -->
+        <div class="cadastro">
+            <input id="descricao" class="input_cadastro" placeholder="Descrição" type="text">
+            <input id="prioridade" class="input_cadastro" placeholder="Prioridade" type="text">
+            <label>Status:</label>
+            <div class="checkbox">
+                <label for="concluida">Sim</label>
+                <input id="concluida" type="checkbox">
+                <label for="naoConcluida">Não</label>
+                <input id="naoConcluida" type="checkbox">
+            </div>
+        </div>
+        <div class="botoes">
+            <button id="enviar" type="submit">Enviar</button>
+            <button id="fecharModal" type="button">Fechar</button>
+        </div>
+    </dialog>
+    
+    <dialog id="modalListar">
+        <!-- Modal de Listagem -->
+        <h2>Lista de Tarefas</h2>
+        <ul id="listaTarefas">
+            <li>Exemplo: Estudar HTML - Prioridade Alta - Concluída</li>
+        </ul>
+        <div class="botoes">
+            <button id="fecharModalListar" type="button">Fechar</button>
+        </div>
+    </dialog>
+    
+
+<script>
+const modal = document.getElementById('modal');
+const abrirModal = document.getElementById('abrirModal');
+const fecharModal = document.getElementById('fecharModal');
+const concluida = document.getElementById('concluida');
+const naoConcluida = document.getElementById('naoConcluida');
+
+// Abrir modal
+abrirModal.addEventListener('click', () => {
+  modal.showModal();
+});
+
+// Fechar modal
+fecharModal.addEventListener('click', () => {
+  modal.close();
+});
+
+// Garantir que só um checkbox possa ser marcado
+concluida.addEventListener('change', () => {
+  if (concluida.checked) {
+    naoConcluida.checked = false;
+  }
+});
+
+naoConcluida.addEventListener('change', () => {
+  if (naoConcluida.checked) {
+    concluida.checked = false;
+  }
+});
+
+const modalListar = document.getElementById('modalListar');
+const abrirModalListar = document.getElementById('abrirModalListar');
+const fecharModalListar = document.getElementById('fecharModalListar');
+
+abrirModalListar.addEventListener("click", () => {
+    modalListar.showModal();
+});
+
+fecharModalListar.addEventListener("click", () => {
+    modalListar.close();
+});
+
+</script>
+</body>
+</html>
